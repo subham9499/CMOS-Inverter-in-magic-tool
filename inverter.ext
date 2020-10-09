@@ -1,0 +1,18 @@
+timestamp 1602243732
+version 8.3
+tech scmos
+style TSMC0.18um(tsmc18)from:t24i
+scale 1000 1 9
+resistclasses 6900 7800 946000 946000 1 8000 8000 80 80 80 80 80 40
+node "gnd!" 87 116.236 -5 -29 poc 20 18 48 48 0 0 0 0 0 0 0 0 0 0 140 78 0 0 0 0 0 0 0 0 0 0
+node "out" 22 79.784 7 -21 ndif 20 18 40 26 0 0 0 0 0 0 0 0 0 0 144 80 0 0 0 0 0 0 0 0 0 0
+node "in" 140 188.084 1 -13 pc 0 0 0 0 0 0 0 0 0 0 86 82 0 0 52 34 0 0 0 0 0 0 0 0 0 0
+node "vdd!" 1103 402.821 -8 -6 nw 48 48 40 26 675 104 0 0 0 0 0 0 0 0 156 86 0 0 0 0 0 0 0 0 0 0
+cap "in" "gnd!" 46.174
+cap "vdd!" "in" 72.612
+cap "out" "gnd!" 86.5762
+cap "in" "out" 61.5653
+cap "vdd!" "out" 170.19
+fet nfet 5 -21 6 -20 8 12 "Gnd!" "in" 4 0 "gnd!" 4 0 "out" 4 0
+fet pfet 5 0 6 1 16 20 "vdd!" "in" 4 0 "vdd!" 8 0 "out" 8 0
+subcap "vdd!" -51.979

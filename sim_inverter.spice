@@ -1,0 +1,17 @@
+Sim file
+
+
+.include "inverter.spice"
+.model nfet nmos
+.model pfet pmos
+
+v1 vdd gnd 1.8
+v2 in gnd pulse (0  1.8 5n 1n 1n 20n 50n)
+
+.tran 5n 200n
+.control
+run
+plot v(in) v(out)
+
+.endc
+.end
